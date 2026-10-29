@@ -1,7 +1,16 @@
+<script setup lang="ts">
+defineProps<{
+  showOnMobile?: boolean
+}>()
+</script>
+
+
+
 <template>
   <aside
-    class="hidden w-full flex-col justify-center border-r-4 border-secondary p-8 md:flex md:w-1/3 lg:w-1/4"
-  >
+    class="w-full flex-col justify-center border-b-4 border-secondary p-4 md:w-1/3 md:border-b-0 md:border-r-4 md:p-8 lg:w-1/4"
+    :class="showOnMobile ? 'flex' : 'hidden md:flex'"
+    >
     <div class="flex flex-col items-center text-center">
       <img
         src="/images/home/portrait.png"
