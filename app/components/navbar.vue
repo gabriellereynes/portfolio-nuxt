@@ -16,6 +16,7 @@ import { navLinks } from '~/data/navLinks'
           exact-active-class="text-primary"
           class="rounded-none p-0 font-bold hover:bg-transparent hover:text-primary aria-[current=page]:bg-transparent!"
         >
+          <component :is="link.icon" class="mr-1 inline h-4 w-4" />
           {{ link.label }}
         </NuxtLink>
       </li>
