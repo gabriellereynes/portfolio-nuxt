@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ArrowRight, Heart } from '@lucide/vue'
 const url = useRequestURL()
 
 const title = 'Portfolio | Gabrielle Louise Reynes'
@@ -22,7 +23,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <Section title="Welcome!" tight>
+  <Section title="Welcome!" tight :icon="Heart">
     <p class="text-sm font-semibold">
       This is my digital portfolio. Click below to know more about me.
     </p>
@@ -32,6 +33,7 @@ useSeoMeta({
       class="btn btn-primary mt-5 rounded-lg font-bold shadow-lg shadow-secondary transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-secondary"
     >
       About me
+      <ArrowRight :size="18" aria-hidden="true" />
     </NuxtLink>
   </Section>
 </template>

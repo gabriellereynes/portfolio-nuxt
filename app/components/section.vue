@@ -2,6 +2,7 @@
 defineProps<{
   title: string
   tight?: boolean
+  icon?: Component
 }>()
 </script>
 
@@ -11,6 +12,7 @@ defineProps<{
       class="text-3xl font-bold transition-colors hover:text-primary"
       :class="tight ? 'mb-3' : 'mb-7'"
     >
+      <component v-if="icon" :is="icon" class="mr-2 inline h-6 w-6" />  
       {{ title }}
     </h2>
     <slot />
