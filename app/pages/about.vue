@@ -1,3 +1,27 @@
+<script setup lang="ts">
+const url = useRequestURL()
+
+const title = 'About | Gabrielle Louise Reynes'
+const description =
+  'Learn more about Gabrielle Louise Reynes, a second-year IT student studying SQL and aiming to specialize as a data analyst.'
+
+useHead({
+  title,
+  link: [{ rel: 'canonical', href: url.href }],
+})
+
+useSeoMeta({
+  description,
+  ogTitle: title,
+  ogDescription: description,
+  ogType: 'profile',
+  ogUrl: url.href,
+  ogImage: `${url.origin}/images/home/portrait.png`,
+  ogImageAlt: 'Portrait of Gabrielle Louise Reynes',
+})
+</script>
+
+
 <template>
   <Section title="About">
     <div class="space-y-6">

@@ -1,3 +1,26 @@
+<script setup lang="ts">
+const url = useRequestURL()
+
+const title = 'Portfolio | Gabrielle Louise Reynes'
+const description =
+  'Digital portfolio of Gabrielle Louise Reynes, an Information Technology student aspiring to become a data analyst.'
+
+useHead({
+  title,
+  link: [{ rel: 'canonical', href: url.href }],
+})
+
+useSeoMeta({
+  description,
+  ogTitle: title,
+  ogDescription: description,
+  ogType: 'website',
+  ogUrl: url.href,
+  ogImage: `${url.origin}/images/home/portrait.png`,
+  ogImageAlt: 'Portrait of Gabrielle Louise Reynes',
+})
+</script>
+
 <template>
   <Section title="Welcome!" tight>
     <p class="text-sm font-semibold">

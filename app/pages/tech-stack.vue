@@ -1,6 +1,28 @@
 <script setup lang="ts">
 import Techcategory from '~/components/techcategory.vue';
 import { techStack } from '~/data/techStack'
+
+const url = useRequestURL()
+
+const title = 'Tech Stack | Gabrielle Louise Reynes'
+const description =
+  'Languages and tools used by Gabrielle Louise Reynes.'
+
+useHead({
+  title,
+  link: [{ rel: 'canonical', href: url.href }],
+})
+
+useSeoMeta({
+  description,
+  ogTitle: title,
+  ogDescription: description,
+  ogType: 'website',
+  ogUrl: url.href,
+  ogImage: `${url.origin}/images/home/portrait.png`,
+  ogImageAlt: 'Portrait of Gabrielle Louise Reynes',
+})
+
 </script>
 
 <template>

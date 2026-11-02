@@ -1,6 +1,27 @@
 <script setup lang="ts">
 import Certcard from '~/components/certcard.vue';
 import { certifications } from '~/data/certifications'
+
+const url = useRequestURL()
+
+const title = 'Certifications | Gabrielle Louise Reynes'
+const description =
+  'Certifications earned by Gabrielle Louise Reynes: Word Associate, PowerPoint Associate, and IT Specialist - Databases.'
+
+useHead({
+  title,
+  link: [{ rel: 'canonical', href: url.href }],
+})
+
+useSeoMeta({
+  description,
+  ogTitle: title,
+  ogDescription: description,
+  ogType: 'website',
+  ogUrl: url.href,
+  ogImage: `${url.origin}/images/certifications/badgeword.png`, 
+  ogImageAlt: 'Microsoft Office Specialist Word Associate badge',
+})
 </script>
 
 <template>
