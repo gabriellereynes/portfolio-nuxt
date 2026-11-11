@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Menu, X } from '@lucide/vue'
-import { navLinks } from '~/data/navLinks'
+import { navlinks } from '~/data/navlinks'
 
 const route = useRoute()
 const open = ref(false)
@@ -30,7 +30,7 @@ watch(
       </button>
 
       <ul v-if="open" id="mobile-menu" class="menu mt-3 w-full gap-1 p-0 text-sm">
-        <li v-for="link in navLinks" :key="link.to">
+        <li v-for="link in navlinks" :key="link.to">
           <NuxtLink
             :to="link.to"
             exact-active-class="text-primary"
@@ -47,7 +47,7 @@ watch(
     <ul
       class="menu menu-horizontal hidden items-center gap-x-10 p-0 text-sm md:flex"
     >
-      <li v-for="link in navLinks" :key="link.to">
+      <li v-for="link in navlinks" :key="link.to">
         <NuxtLink
           :to="link.to"
           exact-active-class="text-primary"

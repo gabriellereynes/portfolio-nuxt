@@ -7,7 +7,7 @@ export interface NavLink {
   icon: Component
 }
 
-export const navLinks: NavLink[] = [
+export const navlinks: NavLink[] = [
   { label: 'Home', to: '/', icon: House },
   { label: 'About', to: '/about', icon: User },
   { label: 'Certifications', to: '/certifications', icon: Medal },

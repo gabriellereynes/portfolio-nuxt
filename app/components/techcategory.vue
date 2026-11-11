@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { TechCategoryData } from '~/data/techStack'
+import type { TechCategoryData } from '~/data/techstack'
 import Techbadge from './techbadge.vue';
 
 defineProps<{ category: TechCategoryData }>()

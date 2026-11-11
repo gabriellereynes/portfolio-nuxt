@@ -10,7 +10,7 @@ export interface TechCategoryData {
 
 const icon = (file: string) => `/images/tech-stack/${file}`
 
-export const techStack: TechCategoryData[] = [
+export const techstack: TechCategoryData[] = [
   {
     title: 'Languages',
     items: [

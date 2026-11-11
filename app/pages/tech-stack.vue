@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Techcategory from '~/components/techcategory.vue';
-import { techStack } from '~/data/techStack'
+import { techstack } from '~/data/techstack'
 
 const url = useRequestURL()
 
@@ -29,7 +29,7 @@ useSeoMeta({
   <Section title="Tech Stack">
     <div class="space-y-10">
       <Techcategory
-        v-for="category in techStack"
+        v-for="category in techstack"
         :key="category.title"
         :category="category"
       />

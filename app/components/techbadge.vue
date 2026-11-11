@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { TechItem } from '~/data/techStack'
+import type { TechItem } from '~/data/techstack'
 
 defineProps<{ item: TechItem }>()
 </script>
