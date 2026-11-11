@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { TechCategoryData } from '~/data/techstack'
-import Techbadge from './techbadge.vue';
 
 defineProps<{ category: TechCategoryData }>()
 </script>
@@ -11,7 +10,7 @@ defineProps<{ category: TechCategoryData }>()
       {{ category.title }}
     </h3>
     <ul class="flex flex-wrap gap-3">
-      <techbadge v-for="item in category.items" :key="item.name" :item="item" />
+      <TechBadge v-for="item in category.items" :key="item.name" :item="item" />
     </ul>
   </div>
 </template>
