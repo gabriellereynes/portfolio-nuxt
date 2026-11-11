@@ -27,7 +27,7 @@ export const certifications: Certification[] = [
     issuer: 'IT Specialist',
     name: 'Databases',
     badge: '/images/certifications/badgedb.png',
-    image: '/images/certifications/badgedb.png',
+    image: '/images/certifications/certdb.png',
     verifyUrl: VERIFY_URL,
   },
 ]
