@@ -30,7 +30,7 @@ useSeoMeta({
 
     <NuxtLink
       to="/about"
-      class="btn btn-primary mt-5 rounded-lg font-bold shadow-lg shadow-secondary transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-secondary"
+      class="btn btn-primary mt-5 rounded-lg font-bold shadow-lg shadow-secondary transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
     >
       About me
       <ArrowRight :size="18" aria-hidden="true" />

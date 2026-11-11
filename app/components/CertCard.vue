@@ -31,7 +31,7 @@ const fullTitle = computed(() => `${props.cert.issuer} ${props.cert.name}`)
         :href="cert.verifyUrl"
         target="_blank"
         rel="noopener noreferrer"
-        class="btn btn-primary btn-sm rounded-full font-bold shadow-lg shadow-secondary transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-secondary"
+        class="btn btn-primary btn-sm rounded-full font-bold shadow-lg shadow-secondary transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
       >
         Verify
       </a>

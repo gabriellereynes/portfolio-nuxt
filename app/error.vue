@@ -46,7 +46,7 @@ const goHome = () => clearError({ redirect: '/' })
 
       <button
         type="button"
-        class="btn btn-primary mt-2 rounded-lg font-bold shadow-lg shadow-secondary transition duration-300 hover:-translate-y-1 hover:scale-110 hover:text-secondary"
+        class="btn btn-primary mt-2 rounded-lg font-bold shadow-lg shadow-secondary transition duration-300 hover:-translate-y-1 hover:scale-110"
         @click="goHome"
       >
         Back to home
