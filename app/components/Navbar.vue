@@ -17,7 +17,7 @@ watch(
 <template>
   <nav class="mb-10 rounded-lg border-4 border-secondary p-4" aria-label="Main navigation">
     <!-- Mobile: hamburger button + dropdown list -->
-    <div class="md:hidden">
+    <div class="lg:hidden">
       <button
         type="button"
         class="btn btn-ghost btn-sm gap-2 px-1 font-bold hover:bg-transparent hover:text-primary"
@@ -45,7 +45,7 @@ watch(
 
     <!-- Desktop: horizontal links -->
     <ul
-      class="menu menu-horizontal hidden items-center gap-x-10 p-0 text-sm md:flex"
+      class="menu menu-horizontal hidden items-center gap-x-10 p-0 text-sm lg:flex"
     >
       <li v-for="link in navlinks" :key="link.to">
         <NuxtLink
